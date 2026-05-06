@@ -53,6 +53,7 @@ CATEGORY_COLORS = {
 
 REPRESENTATIVE_SLUGS = {
     "AI方法": [
+        "rtf-meta-prompt-system-v06",
         "meta-prompt-rtf-generator",
         "interactive-rtf-meta-prompt-system",
         "lisp-rtf-meta-prompt-v08",
@@ -116,6 +117,10 @@ REPRESENTATIVE_SLUGS = {
         "title-alchemist-thinking",
     ],
 }
+
+FEATURED_SLUGS = [
+    "rtf-meta-prompt-system-v06",
+]
 
 
 @dataclass
@@ -233,6 +238,39 @@ def build_prompt_card(prompt: Prompt, color: str) -> str:
     """
 
 
+def build_featured(prompts: list[Prompt]) -> str:
+    by_slug = {prompt.slug: prompt for prompt in prompts}
+    cards = []
+    for slug in FEATURED_SLUGS:
+        prompt = by_slug.get(slug)
+        if not prompt:
+            continue
+        cards.append(
+            f"""
+            <article class="featured-card">
+              <div class="featured-copy">
+                <span class="featured-kicker">重点推荐</span>
+                <h2>{escape(prompt.title)}</h2>
+                <p>{escape(prompt.description)}</p>
+                <div class="prompt-card__tags">{tag_list(prompt.tags)}</div>
+              </div>
+              <div class="featured-side">
+                <span>{escape(prompt.category)}</span>
+                <strong>{escape(prompt.version)}</strong>
+                <a class="button" href="{escape(prompt.github_url)}" target="_blank" rel="noreferrer">查看推荐 Prompt</a>
+              </div>
+            </article>
+            """
+        )
+    if not cards:
+        return ""
+    return f"""
+    <section class="featured" aria-label="重点推荐提示词">
+      {''.join(cards)}
+    </section>
+    """
+
+
 def build_sections(prompts: list[Prompt]) -> str:
     by_slug = {prompt.slug: prompt for prompt in prompts}
     sections = []
@@ -268,6 +306,7 @@ def build_html(prompts: list[Prompt]) -> str:
         counts[prompt.category] += 1
     total = len(prompts)
     representative_count = sum(len(slugs) for slugs in REPRESENTATIVE_SLUGS.values())
+    featured_section = build_featured(prompts)
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -426,6 +465,63 @@ def build_html(prompts: list[Prompt]) -> str:
       color: var(--muted);
       font-size: 13px;
       line-height: 1.5;
+    }}
+    .featured {{
+      padding: 6px 0 20px;
+    }}
+    .featured-card {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 22px;
+      align-items: stretch;
+      padding: 24px;
+      border: 1px solid #b8c7ee;
+      border-top: 4px solid #2563eb;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: var(--shadow);
+    }}
+    .featured-kicker {{
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 13px;
+      font-weight: 760;
+    }}
+    .featured-card h2 {{
+      margin: 14px 0 10px;
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.14;
+      letter-spacing: 0;
+    }}
+    .featured-card p {{
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+    }}
+    .featured-side {{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border-radius: 8px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+    }}
+    .featured-side span {{
+      color: var(--muted);
+      font-size: 13px;
+    }}
+    .featured-side strong {{
+      font-size: 42px;
+      line-height: 1;
     }}
     .type-map {{
       display: grid;
@@ -651,6 +747,9 @@ def build_html(prompts: list[Prompt]) -> str:
       .type-map {{
         grid-template-columns: repeat(2, 1fr);
       }}
+      .featured-card {{
+        grid-template-columns: 1fr;
+      }}
     }}
     @media (max-width: 680px) {{
       .topbar .shell {{
@@ -694,7 +793,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。新增内容已补充到合同、产品原型、网页 PPT、公众号 HTML、Schema.org GEO 和批判思维等场景；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」，它是基于 RTF 框架生成高质量提示词的通用起点；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
@@ -715,6 +814,8 @@ def build_html(prompts: list[Prompt]) -> str:
         </aside>
       </div>
     </section>
+
+    {featured_section}
 
     <section class="overview" aria-label="提示词类型总览">
       <div class="type-map">

@@ -157,6 +157,63 @@
       font-size: 13px;
       line-height: 1.5;
     }
+    .featured {
+      padding: 6px 0 20px;
+    }
+    .featured-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 22px;
+      align-items: stretch;
+      padding: 24px;
+      border: 1px solid #b8c7ee;
+      border-top: 4px solid #2563eb;
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: var(--shadow);
+    }
+    .featured-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-size: 13px;
+      font-weight: 760;
+    }
+    .featured-card h2 {
+      margin: 14px 0 10px;
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.14;
+      letter-spacing: 0;
+    }
+    .featured-card p {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    .featured-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border-radius: 8px;
+      background: #f8fafc;
+      border: 1px solid var(--line);
+    }
+    .featured-side span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .featured-side strong {
+      font-size: 42px;
+      line-height: 1;
+    }
     .type-map {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -381,6 +438,9 @@
       .type-map {
         grid-template-columns: repeat(2, 1fr);
       }
+      .featured-card {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 680px) {
       .topbar .shell {
@@ -424,7 +484,7 @@
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。新增内容已补充到合同、产品原型、网页 PPT、公众号 HTML、Schema.org GEO 和批判思维等场景；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」，它是基于 RTF 框架生成高质量提示词的通用起点；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="https://github.com/yaojingang/yao-open-prompts/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
@@ -436,9 +496,9 @@
             <span>Generated from repository files</span>
           </div>
           <div class="metrics">
-            <div class="metric"><strong>54</strong><span>独立提示词文件</span></div>
+            <div class="metric"><strong>55</strong><span>独立提示词文件</span></div>
             <div class="metric"><strong>9</strong><span>一级类型</span></div>
-            <div class="metric"><strong>45</strong><span>代表提示词入口</span></div>
+            <div class="metric"><strong>46</strong><span>代表提示词入口</span></div>
           </div>
           <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           <div class="signal-caption"><span>方法</span><span>内容密集区</span><span>思考</span></div>
@@ -446,17 +506,37 @@
       </div>
     </section>
 
+
+    <section class="featured" aria-label="重点推荐提示词">
+
+            <article class="featured-card">
+              <div class="featured-copy">
+                <span class="featured-kicker">重点推荐</span>
+                <h2>智能元提示词生成系统 V0.6</h2>
+                <p>重点推荐的通用元提示词。它基于 RTF 框架，把需求分析、角色工程、任务架构、格式规范和质量评估串成一套可复用流程，适合作为生成高质量提示词的起点。</p>
+                <div class="prompt-card__tags"><span>元提示词</span><span>RTF</span><span>重点推荐</span></div>
+              </div>
+              <div class="featured-side">
+                <span>AI方法</span>
+                <strong>V0.6</strong>
+                <a class="button" href="https://github.com/yaojingang/yao-open-prompts/blob/main/prompts/01-ai-methods/rtf-meta-prompt-system-v06.md" target="_blank" rel="noreferrer">查看推荐 Prompt</a>
+              </div>
+            </article>
+
+    </section>
+
+
     <section class="overview" aria-label="提示词类型总览">
       <div class="type-map">
 
-            <a class="type-card" href="#AI方法" style="--accent:#2563eb; --bar:54%">
+            <a class="type-card" href="#AI方法" style="--accent:#2563eb; --bar:62%">
               <div class="type-card__top">
                 <span class="type-name">AI方法</span>
-                <strong>7</strong>
+                <strong>8</strong>
               </div>
               <p>元提示词、反编译、网页逆向、提示词工程框架</p>
               <div class="type-bar" aria-hidden="true"><i></i></div>
-              <span class="type-share">13% of library</span>
+              <span class="type-share">15% of library</span>
             </a>
 
 
@@ -467,7 +547,7 @@
               </div>
               <p>企业调研、合同、客服、销售、产品原型、PPT、网页</p>
               <div class="type-bar" aria-hidden="true"><i></i></div>
-              <span class="type-share">19% of library</span>
+              <span class="type-share">18% of library</span>
             </a>
 
 
@@ -533,7 +613,7 @@
               </div>
               <p>GEO文章生成、Schema.org结构化数据、AI搜索优化</p>
               <div class="type-bar" aria-hidden="true"><i></i></div>
-              <span class="type-share">6% of library</span>
+              <span class="type-share">5% of library</span>
             </a>
 
 
@@ -544,7 +624,7 @@
               </div>
               <p>批判思维、记忆宫殿、标题灵感、思维工具</p>
               <div class="type-bar" aria-hidden="true"><i></i></div>
-              <span class="type-share">6% of library</span>
+              <span class="type-share">5% of library</span>
             </a>
 
       </div>
@@ -560,6 +640,17 @@
                 <a href="https://github.com/yaojingang/yao-open-prompts/tree/main/prompts" target="_blank" rel="noreferrer">完整目录</a>
               </div>
               <div class="prompt-grid">
+
+      <article class="prompt-card" style="--accent:#2563eb">
+        <div class="prompt-card__meta">
+          <span>元提示词</span>
+          <span>V0.6</span>
+        </div>
+        <h3>智能元提示词生成系统 V0.6</h3>
+        <p>重点推荐的通用元提示词。它基于 RTF 框架，把需求分析、角色工程、任务架构、格式规范和质量评估串成一套可复用流程，适合作为生成高质量提示词的起点。</p>
+        <div class="prompt-card__tags"><span>元提示词</span><span>RTF</span><span>重点推荐</span></div>
+        <a class="prompt-link" href="https://github.com/yaojingang/yao-open-prompts/blob/main/prompts/01-ai-methods/rtf-meta-prompt-system-v06.md" target="_blank" rel="noreferrer">查看 Prompt</a>
+      </article>
 
       <article class="prompt-card" style="--accent:#2563eb">
         <div class="prompt-card__meta">
