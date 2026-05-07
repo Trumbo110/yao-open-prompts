@@ -1,6 +1,6 @@
 # 提示词目录
 
-当前共拆分出 **91** 个提示词文件。
+当前共拆分出 **116** 个提示词文件。
 
 ## 分类统计
 
@@ -13,7 +13,7 @@
 | AI教育 | 4 | 儿童教育、互动学习页面和小游戏创作。 |
 | AI内容 | 49 | 写作、润色、标题、公众号 HTML、短视频、内容运营、图像和 PPT 创意。 |
 | AI编程 | 1 | 架构设计和编程协作。 |
-| AI营销 | 3 | GEO 内容生成、改写、Schema.org 结构化数据和营销增长。 |
+| AI营销 | 28 | GEO 内容生成、结构化数据、信源建设、数据监测、增长诊断和合规风险。 |
 | AI思考 | 3 | 批判思维、记忆、标题和思维类灵感提示词。 |
 
 ## 全量索引
@@ -105,9 +105,34 @@
 | AI内容 | 平台运营 | [小红书爆款图文专家](prompts/06-ai-content/xiaohongshu-graphic-expert.md) | active | 小红书 |
 | AI内容 | 标题 | [小红书爆款标题生成器](prompts/06-ai-content/xiaohongshu-title-generator.md) | active | 小红书 |
 | AI编程 | 架构 | [AI智能架构师](prompts/07-ai-coding/ai-system-architect.md) | active | 架构设计 |
+| AI营销 | GEO原理 | [AI答案生成机制分析提示词](prompts/08-ai-marketing/ai-answer-generation-mechanism-analysis.md) | active | GEO |
+| AI营销 | GEO内容 | [AI引用率优化策略提示词](prompts/08-ai-marketing/ai-citation-rate-optimization-strategy.md) | active | GEO |
+| AI营销 | GEO内容 | [AI友好内容创作提示词](prompts/08-ai-marketing/ai-friendly-content-creation.md) | active | GEO |
+| AI营销 | GEO机会 | [AI搜索用户行为分析提示词](prompts/08-ai-marketing/ai-search-user-behavior-analysis.md) | active | GEO |
+| AI营销 | GEO内容 | [答案空间占领策略提示词](prompts/08-ai-marketing/answer-space-occupation-strategy.md) | active | GEO |
+| AI营销 | GEO内容 | [品牌知识资产构建提示词](prompts/08-ai-marketing/brand-knowledge-asset-builder.md) | active | GEO |
+| AI营销 | GEO数据 | [竞品GEO分析提示词](prompts/08-ai-marketing/competitor-geo-analysis.md) | active | GEO |
+| AI营销 | GEO原理 | [ERE框架内容优化提示词](prompts/08-ai-marketing/ere-framework-content-optimization.md) | active | GEO |
 | AI营销 | GEO | [GEO文章生成系统](prompts/08-ai-marketing/geo-article-generator.md) | active | GEO |
 | AI营销 | GEO | [GEO文章改写系统](prompts/08-ai-marketing/geo-article-rewriter.md) | active | GEO |
+| AI营销 | GEO机会 | [GEO商业价值评估与ROI计算提示词](prompts/08-ai-marketing/geo-business-value-roi-calculator.md) | active | GEO |
+| AI营销 | GEO风险 | [GEO合规与安全管理提示词](prompts/08-ai-marketing/geo-compliance-risk-management.md) | active | GEO |
+| AI营销 | GEO内容 | [GEO内容工厂搭建提示词](prompts/08-ai-marketing/geo-content-factory-builder.md) | active | GEO |
+| AI营销 | GEO数据 | [GEO数据体系构建提示词](prompts/08-ai-marketing/geo-data-system-builder.md) | active | GEO |
+| AI营销 | GEO数据 | [GEO增长诊断提示词](prompts/08-ai-marketing/geo-growth-diagnosis.md) | active | GEO |
+| AI营销 | GEO数据 | [GEO数据监测分析提示词](prompts/08-ai-marketing/geo-metrics-monitoring-analysis.md) | active | GEO |
+| AI营销 | GEO内容 | [GEO提示词生成模板](prompts/08-ai-marketing/geo-prompt-generator-template.md) | active | GEO |
+| AI营销 | GEO增长 | [GEO与传统营销协同提示词](prompts/08-ai-marketing/geo-traditional-marketing-synergy.md) | active | GEO |
+| AI营销 | GEO风险 | [GEO白帽合规策略提示词](prompts/08-ai-marketing/geo-white-hat-compliance-strategy.md) | active | GEO |
+| AI营销 | GEO增长 | [行业GEO策略定制提示词](prompts/08-ai-marketing/industry-geo-strategy-customization.md) | active | GEO |
+| AI营销 | GEO机会 | [营销范式转型评估提示词](prompts/08-ai-marketing/marketing-paradigm-transition-assessment.md) | active | GEO |
+| AI营销 | GEO信源 | [多平台信源分发策略提示词](prompts/08-ai-marketing/multi-platform-source-distribution.md) | active | GEO |
+| AI营销 | GEO信源 | [官网权威化改造提示词](prompts/08-ai-marketing/official-website-authority-upgrade.md) | active | GEO |
 | AI营销 | GEO | [Schema.org结构化数据GEO优化提示词](prompts/08-ai-marketing/schema-org-geo-optimization.md) | active | GEO |
+| AI营销 | GEO原理 | [SEO到GEO转型对比分析提示词](prompts/08-ai-marketing/seo-to-geo-transition-comparison.md) | active | SEO |
+| AI营销 | GEO信源 | [权威信源建设提示词](prompts/08-ai-marketing/source-authority-building.md) | active | GEO |
+| AI营销 | GEO信源 | [第三方平台GEO运营提示词](prompts/08-ai-marketing/third-party-platform-geo-operations.md) | active | GEO |
+| AI营销 | GEO增长 | [网站GEO潜力评估提示词](prompts/08-ai-marketing/website-geo-potential-assessment.md) | active | GEO |
 | AI思考 | 记忆 | [记忆宫殿的建筑大师](prompts/09-ai-thinking/memory-palace-architect.md) | active | 记忆宫殿 |
 | AI思考 | 批判思维 | [自我批判大师](prompts/09-ai-thinking/self-critique-master.md) | active | 批判思维 |
 | AI思考 | 标题 | [标题炼金术师（思考版）](prompts/09-ai-thinking/title-alchemist-thinking.md) | active | 标题 |

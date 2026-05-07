@@ -11,5 +11,5 @@
 - `05-ai-education`：儿童教育、互动学习页面和游戏创作
 - `06-ai-content`：写作、润色、标题、公众号 HTML、短视频、内容运营、图像和 PPT 创意
 - `07-ai-coding`：架构与编程协作
-- `08-ai-marketing`：GEO 内容生成、改写与 Schema.org 结构化数据优化
+- `08-ai-marketing`：GEO 内容生成、结构化数据、信源建设、数据监测、增长诊断和合规风险
 - `09-ai-thinking`：批判思维、记忆和标题灵感类提示词

@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- 从《AI营销：从SEO到GEO》提示词合集拆分并新增 25 个 GEO 营销实战模板，放入 `prompts/08-ai-marketing/`。
+- 新增 `prompts/08-ai-marketing/README.md`，按机会、原理、内容、信源、数据、增长、风险归类 AI营销提示词。
+- 更新 README、Prompts 说明、分类体系、全量目录和网页导航，中文提示词总数更新为 116 个。
 - 新增 `prompts-en/06-ai-content/`，同步生成 36 个英文内容与运营提示词文件。
 - 新增 `README.en.md` 和 `prompts-en/README.md`，英文说明文档中的提示词导航均指向英文提示词目录。
 - 更新仓库首页和网页导航，为英文说明文档与英文提示词增加入口。

@@ -35,7 +35,7 @@ CATEGORY_DESCRIPTIONS = {
     "AI教育": "儿童教育、互动学习页面、小游戏生成、教学活动",
     "AI内容": "写作、润色、标题、公众号HTML、短视频、内容运营、图像",
     "AI编程": "架构设计、系统方案、开发协作",
-    "AI营销": "GEO文章生成、Schema.org结构化数据、AI搜索优化",
+    "AI营销": "GEO内容生成、结构化数据、信源建设、数据监测、增长诊断、合规风险",
     "AI思考": "批判思维、记忆宫殿、标题灵感、思维工具",
 }
 
@@ -113,6 +113,14 @@ REPRESENTATIVE_SLUGS = {
         "ai-system-architect",
     ],
     "AI营销": [
+        "ai-search-user-behavior-analysis",
+        "marketing-paradigm-transition-assessment",
+        "geo-content-factory-builder",
+        "ai-friendly-content-creation",
+        "source-authority-building",
+        "geo-data-system-builder",
+        "competitor-geo-analysis",
+        "geo-compliance-risk-management",
         "geo-article-generator",
         "geo-article-rewriter",
         "schema-org-geo-optimization",
@@ -142,6 +150,13 @@ COLLECTIONS = [
         "description": "英文说明文档与 36 个英文内容运营提示词已放在独立目录中，英文入口只导航到英文提示词文件，便于海外读者直接复制使用。",
         "href": f"{REPO_URL}/blob/main/README.en.md",
         "meta": "EN",
+    },
+    {
+        "kicker": "AI营销",
+        "title": "25 个 GEO 营销实战模板",
+        "description": "从《AI营销：从SEO到GEO》提示词合集拆分，覆盖机会判断、原理分析、内容工程、信源建设、数据监测、增长诊断和合规风险。",
+        "href": f"{REPO_URL}/blob/main/prompts/08-ai-marketing/README.md",
+        "meta": "25 个",
     },
 ]
 
@@ -898,7 +913,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；新增的 36 个内容与运营提示词已直接并入 AI内容目录，并同步提供英文说明文档和英文提示词入口。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；新增的 36 个内容与运营提示词已直接并入 AI内容目录，AI营销目录也新增 25 个 GEO 实战模板，并同步提供英文说明文档和英文提示词入口。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
