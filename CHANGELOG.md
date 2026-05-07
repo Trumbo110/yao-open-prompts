@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- 将《AI营销：从SEO到GEO》拆分出的 25 个提示词作者更新为姚金刚与向阳乔木，并补充双方 X 主页。
 - 从《AI营销：从SEO到GEO》提示词合集拆分并新增 25 个 GEO 营销实战模板，放入 `prompts/08-ai-marketing/`。
 - 新增 `prompts/08-ai-marketing/README.md`，按机会、原理、内容、信源、数据、增长、风险归类 AI营销提示词。
 - 更新 README、Prompts 说明、分类体系、全量目录和网页导航，中文提示词总数更新为 116 个。
