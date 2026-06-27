@@ -2,7 +2,7 @@
 
 This directory mirrors the Chinese `prompts/` library one-to-one. Every Chinese prompt file has a matching English file at the same relative path under `prompts-en/`.
 
-Current English prompt files: **117**.
+Current English prompt files: **118**.
 
 ## Categories
 
@@ -15,7 +15,7 @@ Current English prompt files: **117**.
 | [AI Education](05-ai-education/README.md) | 4 | Children education, interactive learning pages, and educational games. |
 | [AI Content](06-ai-content/README.md) | 50 | Writing, copywriting, platform operations, industry content, image prompts, and content review. |
 | [AI Coding](07-ai-coding/README.md) | 1 | Architecture design and AI-assisted software engineering. |
-| [AI Marketing](08-ai-marketing/README.md) | 28 | GEO, AI search optimization, source authority, metrics, growth diagnosis, and compliance. |
+| [AI Marketing](08-ai-marketing/README.md) | 29 | GEO, AI search optimization, article transformation, source authority, metrics, growth diagnosis, and compliance. |
 | [AI Thinking](09-ai-thinking/README.md) | 3 | Critical thinking, memory palaces, title thinking, and reasoning tools. |
 
 ## Maintenance

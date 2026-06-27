@@ -1,8 +1,8 @@
 # AI Marketing
 
-GEO, AI search optimization, source authority, metrics, growth diagnosis, and compliance.
+GEO, AI search optimization, article transformation, source authority, metrics, growth diagnosis, and compliance.
 
-Prompt files: **28**.
+Prompt files: **29**.
 
 | Prompt | Subcategory | Source |
 | --- | --- | --- |
@@ -14,6 +14,7 @@ Prompt files: **28**.
 | [Brand Knowledge Asset Builder](brand-knowledge-asset-builder.md) | GEO Content | `prompts/08-ai-marketing/brand-knowledge-asset-builder.md` |
 | [Competitor GEO Analysis](competitor-geo-analysis.md) | GEO Data | `prompts/08-ai-marketing/competitor-geo-analysis.md` |
 | [Ere Framework Content Optimization](ere-framework-content-optimization.md) | GEO Principles | `prompts/08-ai-marketing/ere-framework-content-optimization.md` |
+| [GEO Article AI-Friendly Transformation Prompt](geo-article-ai-friendly-transformation.md) | GEO | `prompts/08-ai-marketing/geo-article-ai-friendly-transformation.md` |
 | [GEO Article Generator](geo-article-generator.md) | GEO | `prompts/08-ai-marketing/geo-article-generator.md` |
 | [GEO Article Rewriter](geo-article-rewriter.md) | GEO | `prompts/08-ai-marketing/geo-article-rewriter.md` |
 | [GEO Business Value Roi Calculator](geo-business-value-roi-calculator.md) | GEO Opportunities | `prompts/08-ai-marketing/geo-business-value-roi-calculator.md` |

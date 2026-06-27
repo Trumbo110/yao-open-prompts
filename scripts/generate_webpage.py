@@ -35,7 +35,7 @@ CATEGORY_DESCRIPTIONS = {
     "AI教育": "儿童教育、互动学习页面、小游戏生成、教学活动",
     "AI内容": "写作、润色、标题、公众号HTML、短视频、内容运营、图像",
     "AI编程": "架构设计、系统方案、开发协作",
-    "AI营销": "GEO内容生成、结构化数据、信源建设、数据监测、增长诊断、合规风险",
+    "AI营销": "GEO内容生成、文章改造、结构化数据、信源建设、数据监测、增长诊断、合规风险",
     "AI思考": "批判思维、记忆宫殿、标题灵感、思维工具",
 }
 
@@ -122,6 +122,7 @@ REPRESENTATIVE_SLUGS = {
         "geo-data-system-builder",
         "competitor-geo-analysis",
         "geo-compliance-risk-management",
+        "geo-article-ai-friendly-transformation",
         "geo-article-generator",
         "geo-article-rewriter",
         "schema-org-geo-optimization",
@@ -147,10 +148,10 @@ COLLECTIONS = [
     },
     {
         "kicker": "English",
-        "title": "English README and 117 Prompts",
-        "description": "英文说明文档与 117 个英文提示词已放在 prompts-en 独立目录中，路径与中文提示词库一一对应，便于海外读者直接浏览和复制使用。",
+        "title": "English README and 118 Prompts",
+        "description": "英文说明文档与 118 个英文提示词已放在 prompts-en 独立目录中，路径与中文提示词库一一对应，便于海外读者直接浏览和复制使用。",
         "href": f"{REPO_URL}/blob/main/prompts-en/README.md",
-        "meta": "117 EN",
+        "meta": "118 EN",
     },
     {
         "kicker": "AI营销",
@@ -914,7 +915,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；新增的 36 个内容与运营提示词已直接并入 AI内容目录，AI营销目录也新增 25 个 GEO 实战模板，并同步提供 117 个英文提示词镜像入口。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」；新增的 36 个内容与运营提示词已直接并入 AI内容目录，AI营销目录也新增 25 个 GEO 实战模板和 GEO文章AI友好化改造提示词，并同步提供 118 个英文提示词镜像入口。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>

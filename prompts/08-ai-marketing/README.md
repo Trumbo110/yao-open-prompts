@@ -4,6 +4,8 @@
 
 其中《AI营销：从SEO到GEO》提示词合集已拆分为 25 个独立 Markdown 文件，并按机会、原理、内容、信源、数据、增长、风险七组归类。
 
+此外，本目录也收录来自 `05-Prompts/GEO` 的 GEO 专项工具型提示词，用于文章生成、文章改写、AI友好化改造和结构化数据优化。
+
 这 25 个提示词作者为姚金刚与向阳乔木：
 [姚金刚 X 主页](https://x.com/yaojingang) · [向阳乔木 X 主页](https://x.com/vista8)
 
@@ -17,6 +19,7 @@
 
 | 提示词 | 说明 |
 | --- | --- |
+| [GEO文章AI友好化改造提示词](geo-article-ai-friendly-transformation.md) | 对已有文章进行GEO优化改造，通过结构化重构、语义优化和证据强化提升AI搜索可见度和引用率。 |
 | [GEO文章生成系统](geo-article-generator.md) | 输入文章标题和品牌/产品信息，一键生成符合GEO规范的高质量文章。 |
 | [GEO文章改写系统](geo-article-rewriter.md) | 1. 把普通文章一键改写成AI喜好的文章 2. 分成轻度改写、中度改写和重度改写 |
 | [Schema.org结构化数据GEO优化提示词](schema-org-geo-optimization.md) | 围绕 Schema.org 的 name 和 description 标签进行语义优化，提升 AI 搜索对结构化数据的识别准确率和信任度。 |

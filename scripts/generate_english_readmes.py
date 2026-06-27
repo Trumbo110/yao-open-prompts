@@ -16,7 +16,7 @@ CATEGORY_DESCRIPTIONS = {
     "AI Education": "Children education, interactive learning pages, and educational games.",
     "AI Content": "Writing, copywriting, platform operations, industry content, image prompts, and content review.",
     "AI Coding": "Architecture design and AI-assisted software engineering.",
-    "AI Marketing": "GEO, AI search optimization, source authority, metrics, growth diagnosis, and compliance.",
+    "AI Marketing": "GEO, AI search optimization, article transformation, source authority, metrics, growth diagnosis, and compliance.",
     "AI Thinking": "Critical thinking, memory palaces, title thinking, and reasoning tools.",
 }
 CATEGORY_ORDER = list(CATEGORY_DESCRIPTIONS)

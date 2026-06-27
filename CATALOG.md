@@ -1,6 +1,6 @@
 # 提示词目录
 
-当前共拆分出 **117** 个提示词文件。
+当前共拆分出 **118** 个提示词文件。
 
 ## 分类统计
 
@@ -13,7 +13,7 @@
 | AI教育 | 4 | 儿童教育、互动学习页面和小游戏创作。 |
 | AI内容 | 50 | 写作、润色、标题、公众号 HTML、短视频、内容运营、图像和 PPT 创意。 |
 | AI编程 | 1 | 架构设计和编程协作。 |
-| AI营销 | 28 | GEO 内容生成、结构化数据、信源建设、数据监测、增长诊断和合规风险。 |
+| AI营销 | 29 | GEO 内容生成、文章改造、结构化数据、信源建设、数据监测、增长诊断和合规风险。 |
 | AI思考 | 3 | 批判思维、记忆、标题和思维类灵感提示词。 |
 
 ## 全量索引
@@ -114,6 +114,7 @@
 | AI营销 | GEO内容 | [品牌知识资产构建提示词](prompts/08-ai-marketing/brand-knowledge-asset-builder.md) | active | GEO |
 | AI营销 | GEO数据 | [竞品GEO分析提示词](prompts/08-ai-marketing/competitor-geo-analysis.md) | active | GEO |
 | AI营销 | GEO原理 | [ERE框架内容优化提示词](prompts/08-ai-marketing/ere-framework-content-optimization.md) | active | GEO |
+| AI营销 | GEO | [GEO文章AI友好化改造提示词](prompts/08-ai-marketing/geo-article-ai-friendly-transformation.md) | active | GEO |
 | AI营销 | GEO | [GEO文章生成系统](prompts/08-ai-marketing/geo-article-generator.md) | active | GEO |
 | AI营销 | GEO | [GEO文章改写系统](prompts/08-ai-marketing/geo-article-rewriter.md) | active | GEO |
 | AI营销 | GEO机会 | [GEO商业价值评估与ROI计算提示词](prompts/08-ai-marketing/geo-business-value-roi-calculator.md) | active | GEO |
